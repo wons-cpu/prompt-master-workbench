@@ -11,6 +11,18 @@ Pick a target tool → describe your goal → get a prompt that works on the fir
 
 ---
 
+## Demo
+
+**Select your tool and describe what you need:**
+
+![Prompt Master — Input](./assets/screenshot-input.png)
+
+**Get a production-ready prompt, optimized for that tool:**
+
+![Prompt Master — Output](./assets/screenshot-output.png)
+
+---
+
 ## The Problem
 
 Every AI tool behaves differently. A prompt optimized for Claude fails on GPT-4o. Midjourney needs comma-separated descriptors, not prose. Autonomous agents like Devin need explicit stop conditions or they spiral. Most users don't know these differences — they write one generic prompt and wonder why the output is wrong.
@@ -80,7 +92,7 @@ The result: a single copyable prompt, optimized for the target tool's architectu
 
 ```bash
 # Clone
-git clone https://github.com/<your-username>/prompt-master-workbench.git
+git clone https://github.com/wons-cpu/prompt-master-workbench.git
 cd prompt-master-workbench
 
 # Install
@@ -128,10 +140,11 @@ npm run preview
 prompt-master-workbench/
 ├── index.html              # Entry point
 ├── package.json
-├── vite.config.js          # Dev server + API proxy config
+├── vite.config.js          # Dev server config
+├── assets/                 # Screenshots
 ├── src/
 │   ├── main.jsx            # React mount
-│   └── App.jsx             # Full application (~500 lines)
+│   └── App.jsx             # Full application
 ├── LICENSE
 └── README.md
 ```

@@ -31,7 +31,7 @@ Every AI tool behaves differently. A prompt optimized for Claude fails on GPT-4o
 
 Prompt Master Workbench encodes tool-specific optimization rules for **20+ AI platforms** into a single interface. It applies a diagnostic checklist to catch common prompt failures (vague verbs, missing format locks, scope leaks, reasoning technique mismatches) and routes through the correct prompt template — all before the user hits "generate."
 
-The result: a single copyable prompt, optimized for the target tool's architecture and failure modes.
+The result: a single copyable prompt, optimized for the target tool's architecture and failure modes. Even when a generated prompt isn't exactly what you need, it gives you a strong structural template. You refine from a professional starting point instead of a blank page.
 
 ---
 
@@ -79,12 +79,12 @@ The result: a single copyable prompt, optimized for the target tool's architectu
 
 ## Supported Tools
 
-| Category | Tools |
-|----------|-------|
+| Category            | Tools                                                                               |
+| ------------------- | ----------------------------------------------------------------------------------- |
 | **Language Models** | Claude, ChatGPT/GPT-4o, Gemini, o1/o3, DeepSeek-R1, Qwen, Llama/Mistral, Perplexity |
-| **Code & Agents** | Claude Code, Cursor/Windsurf, GitHub Copilot, Bolt/v0/Lovable, Devin, Antigravity |
-| **Image & Video** | Midjourney, DALL-E 3, Stable Diffusion, ComfyUI, Sora/Runway |
-| **Other** | ElevenLabs, Zapier/Make/n8n, Ollama |
+| **Code & Agents**   | Claude Code, Cursor/Windsurf, GitHub Copilot, Bolt/v0/Lovable, Devin, Antigravity   |
+| **Image & Video**   | Midjourney, DALL-E 3, Stable Diffusion, ComfyUI, Sora/Runway                        |
+| **Other**           | ElevenLabs, Zapier/Make/n8n, Ollama                                                 |
 
 ---
 
@@ -119,7 +119,7 @@ npm run preview
 
 1. **Select a target tool** from the grid (20+ options across LLMs, code agents, image generators, workflow tools).
 2. **Describe your goal** in plain language — what you want the AI to do.
-3. *(Optional)* Open **Advanced Options** to force a specific template or add extra context.
+3. _(Optional)_ Open **Advanced Options** to force a specific template or add extra context.
 4. **Generate.** The system routes through tool-specific rules, applies the diagnostic checklist, selects the optimal template, and returns a single copyable prompt block.
 5. **Paste** the prompt into your target tool. It should work on the first try.
 
